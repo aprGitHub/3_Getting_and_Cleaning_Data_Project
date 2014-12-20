@@ -21,6 +21,10 @@ For each record it is provided:
 * A 561-feature vector with time and frequency domain variables. 
 * Its activity label. 
 * An identifier of the subject who carried out the experiment.
+Notes: 
+* Features are normalized and bounded within [-1,1].
+* Each feature vector is a row on the text file.
+
 
 ### The dataset includes the following files:
 * 'README.txt'
@@ -38,11 +42,6 @@ The following files are available for the train and test data. Their description
 * 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
 * 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
-### Notes: 
-- Features are normalized and bounded within [-1,1].
-- Each feature vector is a row on the text file.
-
-For more information about this dataset contact: activityrecognition@smartlab.ws
 
 ### License:
 Use of this dataset in publications must be acknowledged by referencing the following publication:
@@ -80,9 +79,10 @@ version.string R version 3.1.1 (2014-07-10)
 ```
 
 ### Information about the summary choices made
-The script "src/run_analysis.R" in charge to carry out the cleaning proces makes a directory named "data" within the directory in which the script is run. The data-set is downloaded and extracted in that directory. Besides, it is processed, and the resulting tidy data from the 4th and 5th steps are denoted "data/outFile_Tidy_1.csv", "data/outFile_Tidy_2.csv" respectively.
-
-## Code book
-Information about the variables (including units!) in the data set not contained in the tidy data
+The script "src/run_analysis.R" in charge to carry out the cleaning proces makes a directory named "data" within the directory in which the script is run. The data-set is downloaded and extracted in that directory. Besides, it is processed, and the resulting tidy data from the 4th and 5th steps are denoted "data/outFile_Tidy_1.csv", "data/outFile_Tidy_2.txt" respectively.
+In brief, the resulting output files are as follows:
+* "data/outFile_Tidy_1.csv": the features containing information about either "mean" or "std" or "subject" (first) or "activity" (last) were selected and placed in this file
+* "data/outFile_Tidy_2.txt": this second independent tidy data set counts with the average of each variable for each activity and each subject. Note that it does not contain header information, hence, it migth result difficult to read.
+Note that I decided to place the tidy data derived from step 4 in a .csv format while the tidy data derived from step 5 was requested to be given in .txt format by the specifications provided in the project.
 
 
