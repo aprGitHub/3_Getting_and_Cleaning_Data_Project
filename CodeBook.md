@@ -26,7 +26,7 @@ Notes:
 * Each feature vector is a row on the text file.
 
 
-### The dataset includes the following files:
+### List of files included in the dataset
 * 'README.txt'
 * 'features_info.txt': Shows information about the variables used on the feature vector.
 * 'features.txt': List of all features.
@@ -53,7 +53,7 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 
 
 ## Data cleaning process
-The data was downloaded from the url="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip" and extracted.
+For this project the data was downloaded from the url="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip" and extracted.
 ```{r, echo=FALSE}
 source("downloadFromURL.R")
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
