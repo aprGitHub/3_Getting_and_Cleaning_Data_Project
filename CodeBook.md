@@ -57,7 +57,7 @@ The data was downloaded from the url="https://d396qusza40orc.cloudfront.net/getd
 ```{r, echo=FALSE}
 source("downloadFromURL.R")
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-dataDir <- "./data" # unzip EZ DABIL HAU  ../data denean :_!
+dataDir <- "./data" # HAU  ../data DENEAN unzip EZ DABIL:_!
 fileNameZIP <- "HARdata.zip"
 filePathZIP <- paste(dataDir,fileNameZIP,sep="/")
 downloadFromURL(fileUrl,workdirPath=dataDir,fileName=fileNameZIP)
