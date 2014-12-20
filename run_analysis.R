@@ -2,6 +2,7 @@
 ## FILE NAME: run_analysis.R
 ## AUTHOR: apr
 ## LAST REVISION: 2014/12/20
+## This is an ad-hoc script to get and clean a very particular data-set
 ## GOALS: 
 ## 0. Get and unzip the data
 ## 1. Merge the training and the test sets to create one data set.
@@ -11,7 +12,7 @@
 ## 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 ##
 ## PRE-CONDITIONS:
-##
+## - The url "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip" must exist and contain the "Human Activity Recognition Using Smartphones Data Set" zipped:)
 ## POST-CONDITIONS:
 ## - "data" directory is created, and both the original data and the tidy data are placed there
 ####################
