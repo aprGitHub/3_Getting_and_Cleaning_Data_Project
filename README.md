@@ -5,7 +5,6 @@ Getting and Cleaning Data: Project
  The purpose of this project is to gain ability to collect, work with, and clean a data set. 
  The goal is to prepare tidy data that can be used for later analysis. 
 
-If you are you in a hurry turn to sec. 2 directly:) otherwise, in section 1 you will find the full content of this directory.
 
 ## 1. Content of this directory
   1. "README.md": this file
