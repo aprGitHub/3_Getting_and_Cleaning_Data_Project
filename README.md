@@ -32,4 +32,4 @@ run_analysis.R is the script used to get adn clean the data. It proceeds as foll
 
 
 ## 3. Documentation of the corpus 
-To find out a detailed documentation of the corpus turn to CodeBook.md
+To find out a detailed documentation of the corpus turn to "CodeBook.md" within this project.
