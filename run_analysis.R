@@ -1,8 +1,8 @@
 ####################
 ## FILE NAME: run_analysis.R
+## This is an ad-hoc script to get and clean a very particular data-set
 ## AUTHOR: apr
 ## LAST REVISION: 2014/12/20
-## This is an ad-hoc script to get and clean a very particular data-set
 ## GOALS: 
 ## 0. Get and unzip the data
 ## 1. Merge the training and the test sets to create one data set.
