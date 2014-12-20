@@ -21,6 +21,7 @@ For each record it is provided:
 * A 561-feature vector with time and frequency domain variables. 
 * Its activity label. 
 * An identifier of the subject who carried out the experiment.
+
 Notes: 
 * Features are normalized and bounded within [-1,1].
 * Each feature vector is a row on the text file.
