@@ -1,4 +1,3 @@
-pandoc --number-sections < test.md > out.html
 
 Getting and Cleaning Data: Project
 ==================================
