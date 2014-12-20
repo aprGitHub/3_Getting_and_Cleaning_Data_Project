@@ -17,7 +17,7 @@ If you are you in a hurry turn to sec. 2 directly:) otherwise, in section 1 you 
 
 
 ## 2. Documentation of "run_analysis.R"
-### Goal
+### 2.1 Goal
 run_analysis.R is the script used to get adn clean the data. It proceeds as follows: 
 * 1. Merges the training and the test sets to create one data set.
 * 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
@@ -25,7 +25,7 @@ run_analysis.R is the script used to get adn clean the data. It proceeds as foll
 * 4. Appropriately labels the data set with descriptive variable names. 
 * 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-### Post-conditions:
+### 2.2 Post-conditions:
 * The scripts creates a new directory (in the current directory) called "data".
 * Both the original data and the tidy data are placed there.
 
