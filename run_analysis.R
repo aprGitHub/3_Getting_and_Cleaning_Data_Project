@@ -14,12 +14,10 @@
 ## - "data" directory is created, and both the original data and the tidy data are placed there
 ## 
 ####################
-
-## -----------------------------
-## Download and unzip the "Human Activity Recognition Using Smartphones Data Set" 
-## -----------------------------
-##### You can write the function in a separate file and next import the function with source
+# SUB-ROUTINE
+# This sub-routine is designed to download data and it was already tested in other exercises
 # Goal: download a file from a given url into a given directory and with a given name
+# You can write the function in a separate file and next import the function with source
 downloadFromURL <- function  (fileUrl="http://dir.csv", workdirPath=".", fileName="dataFile")
 {
   ## Step 0: Checking for and creating directories
@@ -42,10 +40,12 @@ downloadFromURL <- function  (fileUrl="http://dir.csv", workdirPath=".", fileNam
 }
 # this is how you can import the function file: 
 # source("downloadFromURL.R")
-#####
+####################
 
-
-
+# MAIN ROUTINE: There we go with the Getting and Cleaning Data process:
+## -----------------------------
+## Download and unzip the "Human Activity Recognition Using Smartphones Data Set" 
+## -----------------------------
 #
 dataDir <- "./data" # unzip EZ DABIL HAU  "../data" denean :_!
 #
@@ -100,13 +100,10 @@ names(features) <- c("featName")
 names(data)  <- c("subject",as.character(features$featName),"activity")
 
 
-
-
 ## -----------------------------
 ## Remove useless objects (otherwise, my old laptop may run out of memory:)
 ## -----------------------------
 remove(x_y_train,x_y_test,x_train,x_test,y_train,y_test,ylabels,features,subject_test,subject_train)
-
 
 
 ## -----------------------------
@@ -140,6 +137,6 @@ AvVble_perSubject
 # Write the data into an output file
 outFile2="outFile_Tidy_2.txt"
 write.table(AvVble_perSubject, file=paste(dataDir, outFile2 ,sep="/"), sep="\n", row.names=FALSE, col.names=FALSE)
-# EMAITZA OKER DAGOELA EMATEN DU, BURUKOA BAITAUKA
+# Emaitza pantailatik inprimatzean zuzena dela ematen du, baina fitxategiak ez du itxura ona:-!
 
 
