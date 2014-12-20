@@ -46,9 +46,10 @@ downloadFromURL <- function  (fileUrl="http://dir.csv", workdirPath=".", fileNam
 
 
 
-
-fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+#
 dataDir <- "./data" # unzip EZ DABIL HAU  "../data" denean :_!
+#
+fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 fileNameZIP <- "UCI_HAR_Dataset.zip"
 filePathZIP <- paste(dataDir,fileNameZIP,sep="/")
 
@@ -114,11 +115,11 @@ remove(x_y_train,x_y_test,x_train,x_test,y_train,y_test,ylabels,features,subject
 usefulFeatIdx <- unique(grep("mean|std|subject|activity", names(data), ignore.case = TRUE))
 # 
 data  <- subset(data, select=usefulFeatIdx)
-# Write the data into an output file
-outFile1="outFile_Tidy_0.csv"
-write.csv(data, file=paste(dataDir, outFile1 ,sep="/"))
-#outFile1="outFile_Tidy_0.txt"
-#write.table(data, file=paste(dataDir, outFile1 ,sep="/"), sep=",", row.name=FALSE)
+# Write the tidy data into an output file
+outFile1="outFile_Tidy_1.csv"
+write.csv(data, file=paste(dataDir, outFile1 ,sep="/"), row.names=FALSE)
+#outFile1="outFile_Tidy_1.txt"
+#write.table(data, file=paste(dataDir, outFile1 ,sep="/"), sep=",", row.names=FALSE)
 
 
 ## -----------------------------
@@ -131,14 +132,14 @@ AvVble_perSubject <- by(data, INDICES=list(SUBJECT=data$subject,ACTIVITY=data$ac
        apply(y, 2, mean) # Remember: 1 indicates rows, 2 indicates columns, c(1, 2) indicates rows and columns.
      } 
    )
-
-# print("There you are the the average of each variable for each activity and each subject")
-# AvVble_perSubject
-
+#
+print("There you are the the average of each variable for each activity and each subject")
+AvVble_perSubject
+# Please upload the tidy data set created in step 5 of the instructions. 
+# Please upload your data set as a txt file created with write.table() using row.name=FALSE
 # Write the data into an output file
-# Please upload your data set as a txt file created with write.table() using row.name=FALSE 
-outFile2="outFile_Tidy.txt"
-write.table(AvVble_perSubject, file=paste(dataDir, outFile2 ,sep="/"), sep=",", row.name=FALSE)
+outFile2="outFile_Tidy_2.txt"
+write.table(AvVble_perSubject, file=paste(dataDir, outFile2 ,sep="/"), sep="\n", row.names=FALSE, col.names=FALSE)
 # EMAITZA OKER DAGOELA EMATEN DU, BURUKOA BAITAUKA
 
 
