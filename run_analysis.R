@@ -38,7 +38,7 @@ downloadFromURL <- function  (fileUrl="http://dir.csv", workdirPath=".", fileNam
     print("Saionara baby!")
   }
 }
-# this is how you can import the function file: 
+# This is how you can import the function if you eventually decide to get it in a separate file called "downloadFromURL.R": 
 # source("downloadFromURL.R")
 ####################
 
